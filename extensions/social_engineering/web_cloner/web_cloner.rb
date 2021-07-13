@@ -1,5 +1,5 @@
 #
-# Copyright (c) 2006-2020 Wade Alcorn - wade@bindshell.net
+# Copyright (c) 2006-2021 Wade Alcorn - wade@bindshell.net
 # Browser Exploitation Framework (BeEF) - http://beefproject.com
 # See the file 'doc/COPYING' for copying permission
 #
@@ -206,7 +206,7 @@ module BeEF
         end
 
         def persist_page(uri, mount)
-          webcloner_db = BeEF::Core::Models::Webcloner.new(
+          webcloner_db = BeEF::Core::Models::WebCloner.new(
               :uri => uri,
               :mount => mount
           )
